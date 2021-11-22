@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cardview_light_background"
-    tools:context=".presentation.gamefinishedfragment.GameFinishedFragment">
+    tools:context=".presentation.view.gamefinishedfragment.GameFinishedFragment">
 
     <ImageView
         android:id="@+id/iv_emoji_result"

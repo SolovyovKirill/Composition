@@ -1,4 +1,4 @@
-package com.solovyov.composition.presentation.gamefragment
+package com.solovyov.composition.presentation.view.gamefragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,7 +10,7 @@ import com.solovyov.composition.databinding.FragmentGameBinding
 import com.solovyov.composition.domain.entity.GameResult
 import com.solovyov.composition.domain.entity.GameSettings
 import com.solovyov.composition.domain.entity.Level
-import com.solovyov.composition.presentation.gamefinishedfragment.GameFinishedFragment
+import com.solovyov.composition.presentation.view.gamefinishedfragment.GameFinishedFragment
 import java.lang.RuntimeException
 
 class GameFragment : Fragment() {

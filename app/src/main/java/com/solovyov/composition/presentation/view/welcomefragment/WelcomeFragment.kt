@@ -1,4 +1,4 @@
-package com.solovyov.composition.presentation.welcomefragment
+package com.solovyov.composition.presentation.view.welcomefragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.solovyov.composition.R
 import com.solovyov.composition.databinding.FragmentWelcomeBinding
-import com.solovyov.composition.presentation.chooselevelfragment.ChooseLevelFragment
+import com.solovyov.composition.presentation.view.chooselevelfragment.ChooseLevelFragment
 import java.lang.RuntimeException
 
 class WelcomeFragment : Fragment() {

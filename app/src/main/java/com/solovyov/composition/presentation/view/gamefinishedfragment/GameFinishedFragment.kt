@@ -1,4 +1,4 @@
-package com.solovyov.composition.presentation.gamefinishedfragment
+package com.solovyov.composition.presentation.view.gamefinishedfragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,9 @@ import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import com.solovyov.composition.R
 import com.solovyov.composition.databinding.FragmentFinishedGameBinding
 import com.solovyov.composition.domain.entity.GameResult
-import com.solovyov.composition.presentation.chooselevelfragment.ChooseLevelFragment
-import com.solovyov.composition.presentation.gamefragment.GameFragment
+import com.solovyov.composition.presentation.view.gamefragment.GameFragment
 import java.lang.RuntimeException
 
 class GameFinishedFragment : Fragment() {

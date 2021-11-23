@@ -66,6 +66,7 @@ class GameViewModel(application: Application) : AndroidViewModel(application) {
         getGameSettings(level)
         startTimer()
         generateQuestion()
+        updateProgress()
     }
 
     fun chooseAnswer(number: Int) {
@@ -87,8 +88,12 @@ class GameViewModel(application: Application) : AndroidViewModel(application) {
 
     }
 
-    private fun calculatePercentOfRigtnAnswer(): Int =
-        ((countOfRightAnswer / countOfQuestions.toDouble()) * 100).toInt()
+    private fun calculatePercentOfRigtnAnswer(): Int {
+        if (countOfQuestions == 0) {
+            return 0
+        }
+        return ((countOfRightAnswer / countOfQuestions.toDouble()) * 100).toInt()
+    }
 
     private fun checkAnswer(number: Int) {
         val rightAnswer = question.value?.rightAnswer
@@ -128,7 +133,7 @@ class GameViewModel(application: Application) : AndroidViewModel(application) {
     private fun formatTime(millisUntilFinished: Long): String {
         val seconds = millisUntilFinished / MILLIS_IN_SECONDS
         val minutes = seconds / SECONDS_IN_MINUTES
-        val leftSeconds = seconds - (seconds * SECONDS_IN_MINUTES)
+        val leftSeconds = seconds - (minutes * SECONDS_IN_MINUTES)
         return String.format("%02d:%02d", minutes, leftSeconds)
     }
 

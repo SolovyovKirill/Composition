@@ -21,7 +21,7 @@
 
     <TextView
         android:id="@+id/tv_required_answers"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="@string/required_score"
@@ -46,8 +46,8 @@
 
     <TextView
         android:id="@+id/tv_required_percentage"
-        android:layout_width="362dp"
-        android:layout_height="22dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/required_percentage"
         android:textSize="18sp"

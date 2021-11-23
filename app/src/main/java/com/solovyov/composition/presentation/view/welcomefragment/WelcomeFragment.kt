@@ -8,8 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.solovyov.composition.R
 import com.solovyov.composition.databinding.FragmentWelcomeBinding
-import com.solovyov.composition.presentation.view.chooselevelfragment.ChooseLevelFragment
-import java.lang.RuntimeException
 
 class WelcomeFragment : Fragment() {
 
